@@ -1,12 +1,14 @@
 <template>
 	<div class="card">
-		<slot></slot>
+		<h2>{{ companyName }}</h2>
+		<p>Revenue: {{ revenue }} USD</p>
+		<p>Change: {{ change }}%</p>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'BaseCard',
+	props: ['companyName', 'revenue', 'change'],
 };
 </script>
 
@@ -15,5 +17,6 @@ export default {
 	background-color: #011f35;
 	border-radius: 16px;
 	padding: 20px 32px;
+	color: white;
 }
 </style>
