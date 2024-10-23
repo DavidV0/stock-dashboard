@@ -77,7 +77,10 @@ export default {
 .cards-container {
 	display: flex;
 	justify-content: space-between;
+	background-color: #023a6233;
 	padding: 20px;
 	gap: 20px;
+	margin-bottom: 20px;
+	border-radius: 16px;
 }
 </style>

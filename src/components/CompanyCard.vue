@@ -8,7 +8,10 @@
 		<div class="changes">
 			<p class="company-revenue">{{ revenue }}</p>
 			<div class="changes-right">
-				<p class="company-absolute-change">{{ absoluteChange }}</p>
+				<p class="company-absolute-change" :class="absoluteChangeClass">
+					<span>{{ absoluteChange }}</span>
+					<span :class="positive ? 'arrow-up' : 'arrow-down'"></span>
+				</p>
 				<p class="company-change" :class="changeClass">{{ change }}</p>
 			</div>
 		</div>
@@ -32,22 +35,21 @@ export default {
 		changeClass() {
 			return this.positive ? 'positive' : 'negative';
 		},
+		absoluteChangeClass() {
+			return this.positive ? 'positive' : 'negative';
+		},
 	},
 };
 </script>
 
 <style scoped>
 .company-card {
-	display: flex;
-	align-items: start;
-	justify-content: center;
-	flex-direction: column;
 	background-color: #011f35;
 	border-radius: 16px;
-	padding: 20px 24px 20px 24px !important;
+	padding: 20px;
 	color: white;
 	width: 180px;
-	gap: 8px;
+	margin: 10px;
 }
 
 .company-header {
@@ -62,6 +64,7 @@ export default {
 }
 
 .company-name {
+	font-weight: bold;
 	font-size: 20px;
 }
 
@@ -87,18 +90,12 @@ export default {
 .company-revenue {
 	font-size: 24px;
 	font-weight: bold;
-	margin: 0px;
 }
 
-.company-change {
-	margin: 0px;
-}
-
+.company-change,
 .company-absolute-change {
-	margin: 0px;
-
+	margin: 0;
 	font-size: 14px;
-	color: #ccc;
 }
 
 .positive {
@@ -110,8 +107,21 @@ export default {
 }
 
 .company-unit {
-	margin: 0px;
-	font-size: 8px;
+	margin: 0;
+	font-size: 12px;
 	color: #ccc;
+}
+
+/* CSS for the arrows */
+.arrow-up::before {
+	content: '▲';
+	color: green;
+	margin-left: 5px;
+}
+
+.arrow-down::before {
+	content: '▼';
+	color: red;
+	margin-left: 5px;
 }
 </style>
