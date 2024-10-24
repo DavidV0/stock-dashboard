@@ -34,4 +34,10 @@ h1 {
 	color: white;
 	font-weight: bold;
 }
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 28px;
+	}
+}
 </style>

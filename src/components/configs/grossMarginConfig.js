@@ -12,7 +12,7 @@ export const dataGrossMargin = {
 		{
 			label: 'Gross Margin in % LQ',
 			data: [24.8, 24.3, 12.7, 12.5, 12.2, 6.2, 5.7],
-			backgroundColor: '#ADD8E6', // Light blue color
+			backgroundColor: '#ADD8E6',
 			borderColor: '#ADD8E6',
 			borderWidth: 1,
 			barThickness: 10,
@@ -22,7 +22,7 @@ export const dataGrossMargin = {
 
 export const optionsGrossMargin = {
 	responsive: true,
-	indexAxis: 'y', // Horizontal bar chart
+	indexAxis: 'y',
 	plugins: {
 		legend: {
 			display: false,

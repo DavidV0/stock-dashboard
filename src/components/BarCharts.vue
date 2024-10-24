@@ -67,7 +67,7 @@ export default {
 
 .chart-container > * {
 	flex: 1 1 32%;
-	max-width: 32%;
+	width: 32%;
 	max-height: 300px;
 }
 
@@ -75,5 +75,20 @@ canvas {
 	border-radius: 16px;
 	background-color: #011f35;
 	padding: 20px;
+}
+
+@media (max-width: 1000px) {
+	.chart-container {
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	canvas {
+		width: 97% !important;
+		padding: 0;
+	}
 }
 </style>

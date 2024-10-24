@@ -11,8 +11,8 @@ export const dataNetIncome = {
 	datasets: [
 		{
 			label: 'Net Income TTM',
-			data: [62.62, 40.15, 37.5, 24.51, 26.25, 6.81, 3.16], // Example data
-			backgroundColor: '#00BFFF', // Blue color
+			data: [62.62, 40.15, 37.5, 24.51, 26.25, 6.81, 3.16],
+			backgroundColor: '#00BFFF',
 			borderColor: '#00BFFF',
 			borderWidth: 1,
 			barThickness: 20,
@@ -22,7 +22,7 @@ export const dataNetIncome = {
 
 export const optionsNetIncome = {
 	responsive: true,
-	indexAxis: 'y', // Horizontal bar chart
+	indexAxis: 'y',
 	plugins: {
 		legend: {
 			display: false,

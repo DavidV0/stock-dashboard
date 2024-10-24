@@ -48,6 +48,21 @@ body {
 .revenue {
 	display: flex;
 	gap: 20px;
-	margin: 30px;
+}
+
+@media (max-width: 1420px) {
+	.revenue {
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+	}
+}
+
+@media (max-width: 420px) {
+	.revenue {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
 }
 </style>

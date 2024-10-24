@@ -25,11 +25,10 @@ export default {
 
 <style scoped>
 .pie-chart-container {
-	width: 100%;
+	width: 97%;
 	height: 400px;
 	background-color: #011f35;
 	border-radius: 16px;
-	padding: 20px;
 	position: relative;
 }
 
