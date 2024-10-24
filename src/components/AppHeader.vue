@@ -13,7 +13,6 @@ export default {
 
 <style scoped>
 .header {
-	background-color: #020204;
 	padding-top: 40px;
 	display: flex;
 	align-items: center;

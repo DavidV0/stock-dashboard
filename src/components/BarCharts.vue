@@ -1,9 +1,11 @@
 <template>
-	<div class="chart-container">
-		<Bar :data="dataNetIncome" :options="optionsNetIncome" />
-		<Bar :data="dataGrossMargin" :options="optionsGrossMargin" />
-		<Bar :data="dataRevenueGrowth" :options="optionsRevenueGrowth" />
-	</div>
+	<section>
+		<div class="chart-container">
+			<Bar :data="dataNetIncome" :options="optionsNetIncome" />
+			<Bar :data="dataGrossMargin" :options="optionsGrossMargin" />
+			<Bar :data="dataRevenueGrowth" :options="optionsRevenueGrowth" />
+		</div>
+	</section>
 </template>
 
 <script>
@@ -56,22 +58,23 @@ export default {
 </script>
 
 <style scoped>
-.chart-container {
+section {
+	width: 100vw;
 	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	gap: 20px;
-	max-width: 100vw;
-	height: auto;
+	align-items: center;
 }
-
-.chart-container > * {
-	flex: 1 1 32%;
-	width: 32%;
-	max-height: 300px;
+.chart-container {
+	max-width: 1440px !important;
+	display: flex;
+	max-height: 350px;
+	justify-content: space-between;
+	gap: 20px;
+	height: auto;
+	margin-top: 20px;
 }
 
 canvas {
+	width: 32% !important;
 	border-radius: 16px;
 	background-color: #011f35;
 	padding: 20px;
