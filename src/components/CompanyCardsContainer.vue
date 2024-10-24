@@ -61,6 +61,16 @@
 				absoluteChange="+4.22"
 				unit="in Bill USD"
 			/>
+			<CompanyCard
+				name="Nvidia"
+				:logo="require('@/assets/nvidia-logo.svg')"
+				revenue="71.92"
+				change="-13.2%"
+				:positive="false"
+				quarter="Revenue Q1 2024"
+				absoluteChange="-2.50"
+				unit="in Bill USD"
+			/>
 		</div>
 	</section>
 </template>
